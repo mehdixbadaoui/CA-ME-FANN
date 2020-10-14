@@ -1,0 +1,6 @@
+D:\Documents\UNI\IA\FANN\FANN\bin\Release\FANN.exe.config
+D:\Documents\UNI\IA\FANN\FANN\bin\Release\FANN.exe
+D:\Documents\UNI\IA\FANN\FANN\bin\Release\FANN.pdb
+D:\Documents\UNI\IA\FANN\FANN\obj\Release\FANN.csproj.CoreCompileInputs.cache
+D:\Documents\UNI\IA\FANN\FANN\obj\Release\FANN.exe
+D:\Documents\UNI\IA\FANN\FANN\obj\Release\FANN.pdb
