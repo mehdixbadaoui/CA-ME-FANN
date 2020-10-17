@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FANNCSharp;
 using FANN;
+using FANNCSharp.Double;
 
 namespace FANN
 {
@@ -20,26 +21,19 @@ namespace FANN
         static double[] calc_frequencies(string file)
         {
             string text = File.ReadAllText(file);
-            double[] letter_frequ = new double[27];
+            double[] letter_frequ = new double[32];
 
             int num_chars = 0;
             foreach (char c in text)
             {
                 if (char.ToLower(c) >= 97 && char.ToLower(c) < 123) num_chars++;
             }
-            Console.WriteLine(num_chars);
+
             foreach (char c in text)
             {
-                Console.Write(charindex(char.ToLower(c)) + " ");
                 letter_frequ[charindex(char.ToLower(c))] += (1f/num_chars);
             }
-            //Console.WriteLine("\n" + (double)1/5);
 
-            foreach(double f in letter_frequ)
-            {
-                Console.Write(f+ " ");
-            }
-            Console.WriteLine();
 
 
             return letter_frequ;
@@ -52,16 +46,11 @@ namespace FANN
 
             if (File.Exists(file_out))
             {
-                foreach (double freq in frequencies)
-                {
-                    Console.Write(freq.ToString() + " ");
-                }
-
 
                 using (StreamWriter sw = File.AppendText(file_out))
                 {
 
-                    sw.Write("\n1 0 0\n");
+                    sw.Write("\n0 0 1\n");
                     foreach (float freq in frequencies)
                     {
                         sw.Write(freq.ToString() + " ");
@@ -81,13 +70,19 @@ namespace FANN
 
             string file_in = Directory.GetCurrentDirectory() + "\\text.txt";
             string file_out = Directory.GetCurrentDirectory() + "\\training.txt";
-            //Console.WriteLine((int)'z');
 
-            fill_train_file(file_in, file_out);
-            //if (File.Exists(file))
-            //string body = File.ReadAllText(file);
+            //fill_train_file(file_in, file_out);
+            List<uint> layers = new List<uint>();
+            layers.Add(12);
+            layers.Add(26);
+            layers.Add(3);
 
-            Console.Read();
+            NeuralNet network = new NeuralNet(FANNCSharp.NetworkType.LAYER, layers);
+
+            TrainingData data = new TrainingData();
+
+            fann_train_on_file
+            //Console.Read();
         }
     }
 }
