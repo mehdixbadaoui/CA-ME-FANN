@@ -7,18 +7,19 @@ using System.Text;
 using System.Threading.Tasks;
 using FANNCSharp;
 using FANN;
-using FANNCSharp.Double;
+//using FANNCSharp.Double;
+using FANNCSharp.Float;
 
 namespace FANN
 {
     class Program
     {
-        private static int charindex(char c)
+        private int charindex(char c)
         {
             return (int)c % 32;
         }
 
-        static double[] calc_frequencies(string file)
+        double[] calc_frequencies(string file)
         {
             string text = File.ReadAllText(file);
             double[] letter_frequ = new double[32];
@@ -40,7 +41,7 @@ namespace FANN
 
         }
 
-        static void fill_train_file(string file_in, string file_out)
+        void fill_train_file(string file_in, string file_out)
         {
             double[] frequencies = calc_frequencies(file_in);
 
@@ -80,8 +81,11 @@ namespace FANN
             NeuralNet network = new NeuralNet(FANNCSharp.NetworkType.LAYER, layers);
 
             TrainingData data = new TrainingData();
+            network.TrainOnFile("training.data", 200, 10, 0.001f);
+            network.Save("trained.net");
 
-            fann_train_on_file
+            Console.WriteLine("error: ", +network.MSE);
+            
             //Console.Read();
         }
     }

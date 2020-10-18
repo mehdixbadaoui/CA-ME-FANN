@@ -1,0 +1,10 @@
+D:\Documents\UNI\IA\CA ME FANN\FANN\bin\x86\Debug\fannfloat.dll
+D:\Documents\UNI\IA\CA ME FANN\FANN\bin\x86\Debug\FANN.exe.config
+D:\Documents\UNI\IA\CA ME FANN\FANN\bin\x86\Debug\FANN.exe
+D:\Documents\UNI\IA\CA ME FANN\FANN\bin\x86\Debug\FANN.pdb
+D:\Documents\UNI\IA\CA ME FANN\FANN\bin\x86\Debug\FANNCSharp.dll
+D:\Documents\UNI\IA\CA ME FANN\FANN\obj\x86\Debug\FANN.csprojAssemblyReference.cache
+D:\Documents\UNI\IA\CA ME FANN\FANN\obj\x86\Debug\FANN.csproj.CoreCompileInputs.cache
+D:\Documents\UNI\IA\CA ME FANN\FANN\obj\x86\Debug\FANN.csproj.CopyComplete
+D:\Documents\UNI\IA\CA ME FANN\FANN\obj\x86\Debug\FANN.exe
+D:\Documents\UNI\IA\CA ME FANN\FANN\obj\x86\Debug\FANN.pdb

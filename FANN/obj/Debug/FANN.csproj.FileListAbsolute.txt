@@ -17,9 +17,9 @@ C:\Users\mebadaoui\Documents\AI\CA-ME-FANN\FANN\obj\Debug\FANN.pdb
 D:\Documents\UNI\IA\CA ME FANN\FANN\bin\Debug\FANN.exe.config
 D:\Documents\UNI\IA\CA ME FANN\FANN\bin\Debug\FANN.exe
 D:\Documents\UNI\IA\CA ME FANN\FANN\bin\Debug\FANN.pdb
-D:\Documents\UNI\IA\CA ME FANN\FANN\bin\Debug\FANNCSharp.dll
 D:\Documents\UNI\IA\CA ME FANN\FANN\obj\Debug\FANN.csprojAssemblyReference.cache
 D:\Documents\UNI\IA\CA ME FANN\FANN\obj\Debug\FANN.csproj.CoreCompileInputs.cache
 D:\Documents\UNI\IA\CA ME FANN\FANN\obj\Debug\FANN.csproj.CopyComplete
 D:\Documents\UNI\IA\CA ME FANN\FANN\obj\Debug\FANN.exe
 D:\Documents\UNI\IA\CA ME FANN\FANN\obj\Debug\FANN.pdb
+D:\Documents\UNI\IA\CA ME FANN\FANN\bin\Debug\fannfloat.dll
