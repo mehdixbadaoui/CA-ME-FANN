@@ -7,40 +7,86 @@ using System.Text;
 using System.Threading.Tasks;
 using FANNCSharp;
 using FANN;
+//using FANNCSharp.Double;
+using FANNCSharp.Float;
 
 namespace FANN
 {
     class Program
     {
-        private static int charindex(char c)
+        private int charindex(char c)
         {
             return (int)c % 32;
         }
 
-        public static void Main()
+        double[] calc_frequencies(string file)
         {
-            float[] letter_frequ = new float[27];
+            string text = File.ReadAllText(file);
+            double[] letter_frequ = new double[32];
 
-            string file = "C:\\Users\\mebadaoui\\Documents\\AI\\CA-ME-FANN\\FANN\\text.txt";
-            if (File.Exists(file))
+            int num_chars = 0;
+            foreach (char c in text)
             {
-                int num_chars = 0;
-                string body = File.ReadAllText(file);
-                foreach (char c in body)
-                {
-                    if(c != ' ') num_chars++;
-                }
-
-                foreach (char c in body)
-                {
-                    //Console.Write(charindex(c) + " ");
-                    letter_frequ[charindex(c)] = (letter_frequ[charindex(c)] + 1) / num_chars;
-                }
-
-                Console.WriteLine(letter_frequ[1]);
+                if (char.ToLower(c) >= 97 && char.ToLower(c) < 123) num_chars++;
             }
 
-            Console.Read();
+            foreach (char c in text)
+            {
+                letter_frequ[charindex(char.ToLower(c))] += (1f/num_chars);
+            }
+
+
+
+            return letter_frequ;
+
+        }
+
+        void fill_train_file(string file_in, string file_out)
+        {
+            double[] frequencies = calc_frequencies(file_in);
+
+            if (File.Exists(file_out))
+            {
+
+                using (StreamWriter sw = File.AppendText(file_out))
+                {
+
+                    sw.Write("\n0 0 1\n");
+                    foreach (float freq in frequencies)
+                    {
+                        sw.Write(freq.ToString() + " ");
+                    }
+
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("no file");
+            }
+
+        }
+        public static void Main()
+        {
+
+            string file_in = Directory.GetCurrentDirectory() + "\\text.txt";
+            string file_out = Directory.GetCurrentDirectory() + "\\training.txt";
+
+            //fill_train_file(file_in, file_out);
+            List<uint> layers = new List<uint>();
+            layers.Add(12);
+            layers.Add(26);
+            layers.Add(3);
+
+            NeuralNet network = new NeuralNet(FANNCSharp.NetworkType.LAYER, layers);
+
+            TrainingData data = new TrainingData();
+            network.TrainOnFile("training.data", 200, 10, 0.001f);
+            network.Save("trained.net");
+
+            Console.WriteLine("error: ", +network.MSE);
+            
+            //Console.Read();
         }
     }
 }
