@@ -81,7 +81,7 @@ namespace FANN
             NeuralNet network = new NeuralNet(FANNCSharp.NetworkType.LAYER, layers);
 
             TrainingData data = new TrainingData();
-            network.TrainOnFile("training.data", 200, 10, 0.001f);
+            network.TrainOnFile("training.data", 2000, 100, 0.001f);
             network.Save("trained.net");
 
             Console.WriteLine("error: ", +network.MSE);
