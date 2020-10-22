@@ -10,3 +10,16 @@ D:\Documents\UNI\IA\CA ME FANN\UnderstandFANN\UnderstandFANN\obj\Debug\CA ME FAN
 D:\Documents\UNI\IA\CA ME FANN\UnderstandFANN\UnderstandFANN\obj\Debug\CA ME FANN.csproj.CopyComplete
 D:\Documents\UNI\IA\CA ME FANN\UnderstandFANN\UnderstandFANN\obj\Debug\UnderstandFANN.exe
 D:\Documents\UNI\IA\CA ME FANN\UnderstandFANN\UnderstandFANN\obj\Debug\UnderstandFANN.pdb
+C:\Users\mebadaoui\Documents\AI\CA-ME-FANN\UnderstandFANN\UnderstandFANN\bin\Debug\UnderstandFANN.exe.config
+C:\Users\mebadaoui\Documents\AI\CA-ME-FANN\UnderstandFANN\UnderstandFANN\bin\Debug\UnderstandFANN.exe
+C:\Users\mebadaoui\Documents\AI\CA-ME-FANN\UnderstandFANN\UnderstandFANN\bin\Debug\UnderstandFANN.pdb
+C:\Users\mebadaoui\Documents\AI\CA-ME-FANN\UnderstandFANN\UnderstandFANN\bin\Debug\FANNCSharp.dll
+C:\Users\mebadaoui\Documents\AI\CA-ME-FANN\UnderstandFANN\UnderstandFANN\bin\Debug\System.Text.RegularExpressions.dll
+C:\Users\mebadaoui\Documents\AI\CA-ME-FANN\UnderstandFANN\UnderstandFANN\obj\Debug\CA ME FANN.csprojAssemblyReference.cache
+C:\Users\mebadaoui\Documents\AI\CA-ME-FANN\UnderstandFANN\UnderstandFANN\obj\Debug\Interop.VBScript_RegExp_10.dll
+C:\Users\mebadaoui\Documents\AI\CA-ME-FANN\UnderstandFANN\UnderstandFANN\obj\Debug\Interop.VBScript_RegExp_55.dll
+C:\Users\mebadaoui\Documents\AI\CA-ME-FANN\UnderstandFANN\UnderstandFANN\obj\Debug\CA ME FANN.csproj.ResolveComReference.cache
+C:\Users\mebadaoui\Documents\AI\CA-ME-FANN\UnderstandFANN\UnderstandFANN\obj\Debug\CA ME FANN.csproj.CoreCompileInputs.cache
+C:\Users\mebadaoui\Documents\AI\CA-ME-FANN\UnderstandFANN\UnderstandFANN\obj\Debug\CA ME FANN.csproj.CopyComplete
+C:\Users\mebadaoui\Documents\AI\CA-ME-FANN\UnderstandFANN\UnderstandFANN\obj\Debug\UnderstandFANN.exe
+C:\Users\mebadaoui\Documents\AI\CA-ME-FANN\UnderstandFANN\UnderstandFANN\obj\Debug\UnderstandFANN.pdb

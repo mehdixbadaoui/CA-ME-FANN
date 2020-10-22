@@ -1,0 +1,7 @@
+Petit Algorithme de detection de langue parmis 3 langues (Anglais, Francais, Suedois).
+le training se fait a l'aide de 3 textes differents par langue.
+
+testé sur toutes les langues avec des resultats majoritairement corrects, mais il arrive des fois que 
+l'algorithme se trompe complètement.
+
+test donné en exemple sur un text en suedois.
